@@ -1,9 +1,12 @@
 
 $whitish: #fffdf6;
+$blackish: #191917;
+$pale: #fff383;
 $ale: #EFC51A;
 $porter: #704900;
 $copper: #c98d1e;
 $tomato: #dd2a24;
+
 
 
 body {
@@ -22,6 +25,11 @@ body {
 a {
     text-decoration: none;
     color: $porter; 
+    transition: 237ms;
+    &:hover {
+        color: $blackish;
+        text-decoration: underline;
+    }
 }
 
 .beer_card {
@@ -30,8 +38,25 @@ a {
     width: 14rem;
     margin: 1rem;
     position:relative;
+    border-radius: 2rem 0 0 2rem ;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.17);
+    
     & > div {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        &.name {
+            width: 10rem;
+            background-color: $pale;
+            left: 2rem;
+            height: 4rem;
+            padding: 0 1rem;            
+            a {
+                text-align: center;
+            }
+        }
         &.brewery_type {
             background-color: $porter;
             top: 5rem;
@@ -40,12 +65,11 @@ a {
             height: 2rem; 
             color: $whitish;  
             transform: rotate(270deg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.75rem;               
+            font-size: 0.75rem; 
+            border-radius: 2rem 2rem 0 0;
             &.micro {
                 background-color: $tomato;
+                font-weight: 600;
              }
             &.brewpub {
                 background: $copper;
