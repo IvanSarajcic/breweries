@@ -1,0 +1,55 @@
+
+$whitish: #fffdf6;
+$ale: #EFC51A;
+$porter: #704900;
+$copper: #c98d1e;
+$tomato: #dd2a24;
+
+
+body {
+    margin: 2rem;
+    background-color: $ale;
+    font-family: 'Work Sans', sans-serif;
+    color: $copper;
+}
+
+#root {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: $porter;
+}
+
+.beer_card {
+    background-color: $whitish;
+    height: 12rem;
+    width: 14rem;
+    margin: 1rem;
+    position:relative;
+    & > div {
+        position: absolute;
+        &.brewery_type {
+            background-color: $porter;
+            top: 5rem;
+            left: -5rem;
+            width: 12rem;
+            height: 2rem; 
+            color: $whitish;  
+            transform: rotate(270deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;               
+            &.micro {
+                background-color: $tomato;
+             }
+            &.brewpub {
+                background: $copper;
+            }
+        }
+    }
+}
