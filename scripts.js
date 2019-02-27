@@ -13,8 +13,8 @@ request.onload = function () {
       "<div class='beer_card'>" +
         "<div class='name'><a target='_blank' href='" + beer.website_url + "'>" + beer.name + "</a></div>" + 
         "<div class='brewery_type " + beer.brewery_type + "'>" + beer.brewery_type + "</div>" +
-        "<div class='street'>" + beer.street + "</div>" +
-        "<div class='city'>" + beer.city + "</div>" +
+        "<div class='city'>" + beer.street + "<br /><strong>" + beer.city + "</strong></div>" +
+        "<div class='location'><a target='_blank' href='#'>↝</a></div>" +
       "</div>";
     });
   } else {
