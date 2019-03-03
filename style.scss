@@ -32,7 +32,7 @@ a {
 }
 
 .beer_card {
-    background-color: $whitish;
+    background-color: $pale;
     height: 12rem;
     width: 14rem;
     margin: 1rem;
@@ -63,7 +63,7 @@ a {
                 left: 0rem;
                 position: absolute;
                 align-items: center;
-                background-color: $pale;
+                background-color: $whitish;
                 &:hover {
                     opacity: 0.76;
                     color: $blackish;
@@ -101,6 +101,9 @@ a {
              }
             &.brewpub {
                 background: $copper;
+            }
+            &.regional {
+                background: $blackish;
             }
         }
     }

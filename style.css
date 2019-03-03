@@ -28,7 +28,7 @@ a:hover {
 }
 
 .beer_card {
-  background-color: #fffdf6;
+  background-color: #fff383;
   height: 12rem;
   width: 14rem;
   margin: 1rem;
@@ -80,7 +80,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff383;
+  background-color: #fffdf6;
 }
 
 .beer_card > div.name a:hover {
@@ -125,5 +125,9 @@ a:hover {
 
 .beer_card > div.brewery_type.brewpub {
   background: #c98d1e;
+}
+
+.beer_card > div.brewery_type.regional {
+  background: #191917;
 }
 /*# sourceMappingURL=style.css.map */
